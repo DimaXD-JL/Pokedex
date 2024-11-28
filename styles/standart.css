@@ -7,7 +7,7 @@ body {
     color: white;
     text-align: center;
     object-fit: cover;
-    background-image: url(/assets/img/main_backgrond_galaxi.jpg);
+    /* background-image: url(/assets/img/main_backgrond_galaxi.jpg); */
     background-attachment: fixed;
     object-position: top;
     background-repeat: no-repeat;

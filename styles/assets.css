@@ -1,0 +1,9 @@
+#myVideo{
+    position: fixed; /* Fixiert das Video auf der Seite */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Volle Breite des Viewports */
+    height: 100vh; /* Volle Höhe des Viewports */
+    object-fit: cover; /* Das Video wird beschnitten, um das Seitenverhältnis beizubehalten */
+    z-index: -1;
+}
