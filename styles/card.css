@@ -5,8 +5,10 @@
     color: white;
     border-radius: 5%;
     border-color: #00ff08;
-    border-style: groove;
+    border: 0.39rem solid;
     align-items: center;
+    box-shadow: inset -3px 2px 20px 11px rgb(0 0 4);
+   
     
 }
 .poke-cards:hover{
@@ -16,7 +18,7 @@
     /* transition: 50ms; */
     height: 250px;
     width: 180px;
-    box-shadow: inset -3px 2px 20px 11px rgb(93, 137, 218)
+    box-shadow: -3px 2px 20px 20px rgb(93, 137, 218)
 }
 .card-img {
     height: 50%;
@@ -33,16 +35,25 @@
     /* box-shadow: 0 0 20px 11px rgb(93, 137, 218);  */
   }
 .card-icons{
-    height: 40px;
+    /* height: 40px; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* padding-left: 36px; */
-    /* padding-block: 20px; */
+    align-items: end;
+    gap: 33px;
+    padding-top: 23px;
+  
 }
+
 .type-icon {
   width: 24px; /* Oder deine bevorzugte Größe */
   height: 24px; /* Oder deine bevorzugte Größe */
+}
+.type-icon:hover {
+  width: 40px; /* Oder deine bevorzugte Größe */
+  height: 40px; /* Oder deine bevorzugte Größe */
+  /* padding-top: 5px; */
+  cursor: pointer;
+  transform: scale(1.48);
 }
 #condent-cards{
     display: flex;
@@ -58,3 +69,4 @@
     /* padding: 5px; */
     justify-content: space-around;
   }
+  

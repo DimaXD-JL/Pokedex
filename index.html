@@ -19,7 +19,7 @@
     <script src="./script_overlay.js"></script>
 </head>
 
-<body onload="fetchPokedexJson()">
+<body onload="fetchPokedexJson()"style="text-align:center;">
   <video autoplay muted loop id="myVideo">
     <source src="./assets/mp4/background_video.mp4" type="video/mp4">
   </video>
@@ -46,15 +46,11 @@
   <button id="load-button" class="button"style="vertical-align:middle" onclick="loadMorePokemon()"><span>Weitere Pokémon laden</span></button>
   <span id="pokemon-count">von 1309 Pokémon geladen.</span>
 </div>
-</main> 
+</main>
 <div id="overlay" class="overlay d_none">
       <div class="overlay_bigcards">
-
       </div>
-
 </div>
-
-
     <footer>
         <img
           class="footer_img"

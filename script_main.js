@@ -34,19 +34,19 @@ function renderPokemon(pokemon) {
  //syntax= condition ? exprIfTrue : exprIfFalse
 
   pokemonsRef.innerHTML += `
-    <div class="poke-cards bo_${typeClass}">
+    <div class="poke-cards .example-1 bo_${typeClass}">
       <div class="header-cards">
         <p>#${pokemon.id}</p>
         <p><strong>${pokemon.name}</strong></p>
       </div>
-      <img
-        class="card-img bo_${typeClass}"
+      <img  
+        class="card-img "
         src="${pokemon.sprites.other.dream_world.front_default}"
         alt="${pokemon.name}"
       />
-      <div class="card-icons ${typeClass}">
+      <div class="card-icons ${typeClass} ">
         <!-- Dynamisches Hinzufügen von Icons, basierend auf dem Typ -->
-        <img class="type-icon" src="./assets/icons/typeIcon_${typeClass}.png" alt="${typeClass} icon">
+        <img class="type-icon" src="./assets/icons/typeIcon_${typeClass}.png"alt="${typeClass} icon">
           ${hasSecondClass ? `<img class="type-icon" src="./assets/icons/typeIcon_${secondClass}.png" alt="${secondClass} icon">` : ''}
     </div>
   `;

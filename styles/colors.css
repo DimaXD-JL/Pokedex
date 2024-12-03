@@ -3,11 +3,13 @@
   }
   .bo_fighting {
     border-color: #c03028; /* Red for fighting */
+   
   }
   
   .bo_flying {
     border-color: #a890f0; /* Light purple for flying */
   }
+  
   
   .bo_poison {
     border-color: #a040a0; /* Purple for poison */
@@ -41,7 +43,7 @@
     border-color: #6890f0; /* Blue for water */
   }
   
-  .bo_ss {
+  .bo_grass {
     border-color: green; /* Green for grass */
   }
   
