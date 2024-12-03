@@ -24,7 +24,7 @@ body {
     font-size: 25px;
     color: white;
     background-color: rgb(10, 34, 44, 0.53);
-    padding-left: 30px;
+    /* padding-left: 30px; */
   }
   .heder_img {
     width: 60px;
@@ -32,10 +32,24 @@ body {
     margin: 3px;
     padding-top: 25px;
   }
-  main {
-  
+  .logo_img{
+    width: 70%;
+    height: 70%;
+    margin: 3px;
+    padding-top: 25px;
   }
-  
+  main {
+  }
+
+  #load-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+    margin-top: 44px;
+    flex-direction: column;
+  }
   footer {
     display: flex;
     flex-direction: column;
@@ -48,4 +62,42 @@ body {
   footer img {
     height: 120px;
     width: auto;
+  }
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
   }
