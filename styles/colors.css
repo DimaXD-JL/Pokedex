@@ -1,0 +1,79 @@
+ .bo_normal {
+    border-color: #a8a878; /* Light gray/green for normal */
+  }
+  
+  .bo_fighting {
+    border-color: #c03028; /* Red for fighting */
+  }
+  
+  .bo_flying {
+    border-color: #a890f0; /* Light purple for flying */
+  }
+  
+  .bo_poison {
+    border-color: #a040a0; /* Purple for poison */
+  }
+  
+  .bo_ground {
+    border-color: #e0c068; /* Yellow-brown for ground */
+  }
+  
+  .bo_rock {
+    border-color: #b8a038; /* Brownish color for rock */
+  }
+  
+  .bo_bug {
+    border-color: #a8b820; /* Light green for bug */
+  }
+  
+  .bo_ghost {
+    border-color: #705898; /* Purple for ghost */
+  }
+  
+  .bo_steel {
+    border-color: #b8b8d0; /* Light gray for steel */
+  }
+  
+  .bo_fire {
+    border-color: #f08030; /* Orange for fire */
+  }
+  
+  .bo_water {
+    border-color: #6890f0; /* Blue for water */
+  }
+  
+  .bo_ss {
+    border-color: green; /* Green for grass */
+  }
+  
+  .bo_electric {
+    border-color: #f8d030; /* Yellow for electric */
+  }
+  
+  .bo_psychic {
+    border-color: #f85888; /* Pink for psychic */
+  }
+  
+  .bo_ice {
+    border-color: #98d8d8; /* Light blue for ice */
+  }
+  
+  .bo_dragon {
+    border-color: #7038f8; /* Purple for dragon */
+  }
+  
+  .bo_dark {
+    border-color: #705848; /* Dark brown for dark */
+  }
+  
+  .bo_fairy {
+    border-color: #ee99ac; /* Light pink for fairy */
+  }
+  
+  .bo_stellar {
+    border-color: #f8f8f8; /* Very light color for stellar */
+  }
+  
+  .bo_unknown {
+    border-color: #a8a8a8; /* Gray for unknown */
+  }

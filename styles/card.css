@@ -1,27 +1,32 @@
 .poke-cards{
     background-color: rgb(10, 34, 44, 0.53);
-    height: 150px;
-    width: 100px;
+    height: 200px;
+    width: 150px;
     color: white;
     border-radius: 5%;
     border-color: #00ff08;
     border-style: groove;
     align-items: center;
+    
 }
 .card-img {
-    height: 50px;
-    width: 98px;
+    height: 50%;
+    width: 100%;
     border-style: groove;
-    
+    border-color: #00ff08;
   }
 .card-icons{
-    height: 15px;
+    height: 40px;
     display: flex;
-    /* align-items: center; */;
-    padding-left: 36px;
-    padding-block: 20px;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 36px; */
+    /* padding-block: 20px; */
 }
-
+.type-icon {
+  width: 24px; /* Oder deine bevorzugte Größe */
+  height: 24px; /* Oder deine bevorzugte Größe */
+}
 #condent-cards{
     display: flex;
     justify-content: center;

@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="./styles/overlay.css">
     <link rel="stylesheet" href="./styles/standart.css">
     <link rel="stylesheet" href="./styles/responsiv.css">
+    <link rel="stylesheet" href="./styles/colors.css">
 
-    <script src="./script.js"></script>
+
+    <script src="./script_main.js"></script>
     <script src="./script/tamplates.js"></script> 
+    <script src="./script_overlay.js"></script>
 </head>
 
-<body>
+<body onload="fetchPokedexJson()">
   <video autoplay muted loop id="myVideo">
-    <source src="/assets/mp4/background_video.mp4" type="video/mp4">
+    <source src="./assets/mp4/background_video.mp4" type="video/mp4">
   </video>
     <header>
         <img
@@ -27,26 +30,25 @@
         />
         <h2>Pokedex</h2>
       </header>
-  
-<main id="condent-cards">
-<div class="poke-cards">
-  <div class="header-cards">
-  <p>#id</p>
-  <p>full Name </p>
-</div>
-  <img
-          class="card-img"
-          src="./assets/icons/pokeboll_logo.png"
-          alt="Pokeball-logo"
-        />
-  <div class="card-icons">
-    <img src="./assets/icons/typeIcon_bug.png" alt="icon">
-    <img src="./assets/icons/typeIcon_bug.png" alt="icon">
-  </div>
+      <!-- <div onclick="toggleOverlay()" id="overlay" class="overlay d_none">
+        <div onclick="bubblingProtextin(event)" class="overlay-content">
+          <button class="close-button" onclick="toggleOverlay()">×</button>
+          <div id="overlayImg"></div>
+       
+          <div class="nav-button">
+            <button onclick="back()">←</button>
+            <button onclick="next()">→</button>
+          </div>
+        </div>
+      </div> -->
+<main>
+<div id="condent-cards"></div>
 
-
+<div id="load">
+  <button id="load-more">Weitere Pokémon laden</button>
+  <span >0 von 1309 Pokémon geladen.</span>
 </div>
-</main>
+</main> 
     <footer>
         <img
           class="footer_img"
@@ -55,6 +57,7 @@
         />
         <p>© Dzmitry Stashkevich</p>
     </footer>
+   
 </body>
 
 

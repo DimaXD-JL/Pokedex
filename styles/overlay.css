@@ -1,0 +1,36 @@
+/* .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.375);
+    z-index: 10;
+  
+  }
+  .overlay img {
+    height: 400px;
+    width: 400px;
+    border-radius: 12px;
+    margin: 16px;
+  }
+  .d_none {
+    display: none;
+  }
+  
+  .overlay-content {
+    background-color: rgb(7, 24, 32, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+  } */

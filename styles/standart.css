@@ -33,10 +33,7 @@ body {
     padding-top: 25px;
   }
   main {
-    height: 100vh;
-    color: white;
-    text-align: center;
-    object-fit: cover; 
+  
   }
   
   footer {
