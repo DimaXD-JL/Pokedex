@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 
-    <script src="./script_main.js"></script>
-    <script src="./script/tamplates.js"></script> 
-    <script src="./script_overlay.js"></script>
+    <!-- <script src="./script_main.js"></script> -->
+    <!-- <script src="./script/tamplates.js"></script>  -->
+    <!-- <script src="./script_overlay.js"></script> -->
 </head>
 
 <body onload="fetchPokedexJson()"style="text-align:center;">
@@ -37,20 +37,25 @@
         />
         <img class="logo_img"src="./assets/img/myPokedex.png"alt="myLogo"/>
       </div>
-      <div><i class="uil uil-search search-icon"></i></div>
+ 
       </header>
 <main>
-<div id="condent-cards"></div>
+<div id="condent-cards">
 
+</div>
 <div id="load-more">
   <button id="load-button" class="button"style="vertical-align:middle" onclick="loadMorePokemon()"><span>Weitere Pokémon laden</span></button>
   <span id="pokemon-count">von 1309 Pokémon geladen.</span>
 </div>
+
 </main>
-<div id="overlay" class="overlay d_none">
-      <div class="overlay_bigcards">
-      </div>
+  <div onclick="toggleOverlay()" id="overlay" class="overlay d_none">
+    <div onclick="bubblingProtextin(event)"class="overlay-content">
+      <div id="overlayBigCards">
+      </div> 
+    </div>
 </div>
+
     <footer>
         <img
           class="footer_img"
@@ -59,8 +64,10 @@
         />
         <p>© Dzmitry Stashkevich</p>
     </footer>
-   
+    
 </body>
-
+<script src="./script_overlay.js"></script>
+<script src="./script/tamplates.js"></script> 
+<script src="./script_main.js"></script>
 
 </html>
