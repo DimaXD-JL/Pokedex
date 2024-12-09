@@ -2,30 +2,38 @@ let currentIndex = 0; // Aktueller Index im geladenen Pokémon-Array
 
 function overlayContent(pokemon) {
     let overlayPokeContainer = document.getElementById("overlayBigCards");
-
-    overlayPokeContainer.innerHTML = `
-        <div class="bo_${pokemon.types[0].type.name}">
-            <div class="header-overlaybigcards">
-                <p>#${pokemon.id}</p>
-                <p><strong>${pokemon.name}</strong></p>
-            </div>
-            <img  
-                class="overlaybigcard-img"
-                src="${pokemon.sprites.other.dream_world.front_default}" 
-                alt="${pokemon.name}" 
-            />
-            <div class="overlay-details">
-                <p>Typ: ${pokemon.types.map(t => t.type.name).join(", ")}</p>
-                <p>Höhe: ${(pokemon.height / 10).toFixed(1)} m</p>
-                <p>Gewicht: ${(pokemon.weight / 10).toFixed(1)} kg</p>
-            </div>
-            <div class="nav-button">
-                <button onclick="back()">←</button>
-                <button onclick="next()">→</button> 
-            </div>
-        </div>
-    `;
-}
+    
+    // Verwende das Template aus der getOverlayHTML-Funktion
+    let overlayHTML = getOverlayHTML(pokemon);
+  
+    // Setze das HTML in den Container
+    overlayPokeContainer.innerHTML = overlayHTML;
+  }
+// function overlayContent(pokemon) {
+//     let overlayPokeContainer = document.getElementById("overlayBigCards");
+//     overlayPokeContainer.innerHTML = `
+//         <div class="bo_${pokemon.types[0].type.name}">
+//             <div class="header-overlaybigcards">
+//                 <p>#${pokemon.id}</p>
+//                 <p><strong>${pokemon.name}</strong></p>
+//             </div>
+//             <img  
+//                 class="overlaybigcard-img"
+//                 src="${pokemon.sprites.other.dream_world.front_default}" 
+//                 alt="${pokemon.name}" 
+//             />
+//             <div class="overlay-details">
+//                 <p>Typ: ${pokemon.types.map(t => t.type.name).join(", ")}</p>
+//                 <p>Höhe: ${(pokemon.height / 10).toFixed(1)} m</p>
+//                 <p>Gewicht: ${(pokemon.weight / 10).toFixed(1)} kg</p>
+//             </div>
+//             <div class="nav-button">
+//                 <button onclick="back()">←</button>
+//                 <button onclick="next()">→</button> 
+//             </div>
+//         </div>
+//     `;
+// }
 function bubblingProtextin(event) {
     event.stopPropagation();
 }

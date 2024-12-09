@@ -21,14 +21,11 @@
 .card-img {
     height: 50%;
     width: 90%;
-    
   }
   .card-img:hover {
-    
     object-position: top;
     cursor: pointer;
     transform: scale(1.48);
- 
   }
 .card-icons{
     display: flex;
@@ -36,9 +33,7 @@
     align-items: end;
     gap: 33px;
     padding-top: 15px;
-  
 }
-
 .type-icon {
   width: 28px; 
   height: 28px; 
