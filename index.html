@@ -14,43 +14,48 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 
-    <script src="./script_main.js"></script>
-    <script src="./script/tamplates.js"></script> 
-    <script src="./script_overlay.js"></script>
+    <!-- <script src="./script_main.js"></script> -->
+    <!-- <script src="./script/tamplates.js"></script>  -->
+    <!-- <script src="./script_overlay.js"></script> -->
 </head>
 
-<body onload="fetchPokedexJson()"style="text-align:center;">
+<body onload="init()">
   <video autoplay muted loop id="myVideo">
     <source src="./assets/mp4/background_video.mp4" type="video/mp4">
   </video>
-  <!-- <audio
-    controls autoplay loop
-   src="./assets/sound/pokemon-german.mp3" 
-   type="audio/mp3">
-  </audio> -->
+ 
     <header>  
       <div>
-        <img
-          class="heder_img"
-          src="./assets/icons/pokeboll_logo.png"
-          alt="Pokeball-logo"
-        />
         <img class="logo_img"src="./assets/img/myPokedex.png"alt="myLogo"/>
       </div>
-      <div><i class="uil uil-search search-icon"></i></div>
+   <div class="serchbar">
+      <input type="text" id="search" maxlength="3" placeholder="Pokemon suchen..." />
+      <button id="searchButton" onclick="searchPokemon()">Suchen</button>
+    </div>
       </header>
-<main>
-<div id="condent-cards"></div>
+
+<main id="myDiv">  
+  <div id="condent-cards"></div>
 
 <div id="load-more">
-  <button id="load-button" class="button"style="vertical-align:middle" onclick="loadMorePokemon()"><span>Weitere Pokémon laden</span></button>
+  <button id="load-button" class="button"style="vertical-align:middle" 
+  onclick="loadMorePokemon()">
+  <span>Weitere Pokémon laden</span>
+</button>
   <span id="pokemon-count">von 1309 Pokémon geladen.</span>
 </div>
 </main>
-<div id="overlay" class="overlay d_none">
-      <div class="overlay_bigcards">
-      </div>
+
+<div id="loader" style="display: none;">
 </div>
+
+  <div onclick="toggleOverlay()" id="overlay" class="overlay d_none">
+    <div onclick="bubblingProtextin(event)"class="overlay-content">
+      <div id="overlayBigCards">
+      </div> 
+    </div>
+</div>
+
     <footer>
         <img
           class="footer_img"
@@ -59,8 +64,10 @@
         />
         <p>© Dzmitry Stashkevich</p>
     </footer>
-   
+    
 </body>
-
+<script src="./script_overlay.js"></script>
+<script src="./script/tamplates.js"></script> 
+<script src="./script_main.js"></script>
 
 </html>
