@@ -1,4 +1,4 @@
-let currentIndex = 0;
+let currentIndex = 0; // Aktueller Index im geladenen Pokémon-Array
 
 function overlayContent(pokemon) {
     let overlayPokeContainer = document.getElementById("overlayBigCards");
