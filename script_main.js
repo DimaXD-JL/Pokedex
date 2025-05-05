@@ -4,9 +4,11 @@ let totalPokemons = 1309;      // Gesamtanzahl der verfügbaren Pokémon
 let loadedPokemons = [];       // Ein Array, um die geladenen Pokémon zu speichern
 let myVar;                     // Eine Variable für das Timeout in der Ladeanzeige
 
+
 function init() {
   fetchPokedexJson();            // Starte das Laden der Pokémon-Daten
 }
+
 async function fetchPokedexJson() {
   for (let i = currentOffset; i < currentOffset + limit && i <= totalPokemons; i++) {
     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`); // API-Anfrage für jedes Pokémon
@@ -60,6 +62,7 @@ function renderPokemon(pokemon) {
   }
  
   // function renderPokemon(pokemon) {
+
   //   let pokemonsRef = document.getElementById('condent-cards');
   
   //   let typeClass = pokemon.types[0].type.name;
@@ -82,10 +85,9 @@ function renderPokemon(pokemon) {
   //           ${hasSecondClass ? <img class="type-icon" src="./assets/icons/typeIcon_${secondClass}.png" alt="${secondClass} icon"> : ''}
   //     </div>
   //   ;
-  //  }
+  //  } 
 
-  
-function updatePokemonCount() {
+  function updatePokemonCount() {
   const pokemonCountSpan = document.getElementById('pokemon-count');
   pokemonCountSpan.textContent = `${currentOffset-1} von ${Math.min(totalPokemons)} Pokémon geladen.`;
 }

@@ -1,12 +1,8 @@
-let currentIndex = 0; // Aktueller Index im geladenen Pokémon-Array
+let currentIndex = 0; 
 
 function overlayContent(pokemon) {
     let overlayPokeContainer = document.getElementById("overlayBigCards");
-    
-    // Verwende das Template aus der getOverlayHTML-Funktion
     let overlayHTML = getOverlayHTML(pokemon);
-  
-    // Setze das HTML in den Container
     overlayPokeContainer.innerHTML = overlayHTML;
   }
 // function overlayContent(pokemon) {

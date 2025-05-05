@@ -1,70 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
-    <link rel="icon" href="./assets/icons/Pokeball_favicon.png">
-    <link rel="stylesheet" href="./styles/assets.css">
-    <link rel="stylesheet" href="./styles/card.css">
-    <link rel="stylesheet" href="./styles/overlay.css">
-    <link rel="stylesheet" href="./styles/standart.css">
-    <link rel="stylesheet" href="./styles/responsiv.css">
-    <link rel="stylesheet" href="./styles/colors.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="icon" href="./assets/icons/Pokeball_favicon.png" />
+    <link rel="stylesheet" href="./styles/assets.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="./styles/overlay.css" />
+    <link rel="stylesheet" href="./styles/standart.css" />
+    <link rel="stylesheet" href="./styles/responsiv.css" />
+    <link rel="stylesheet" href="./styles/colors.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
 
+  <body onload="init()">
+    <video autoplay muted loop id="myVideo">
+      <source src="./assets/mp4/background_video.mp4" type="video/mp4" />
+    </video>
 
-    
-</head>
-
-<body onload="init()">
-  <video autoplay muted loop id="myVideo">
-    <source src="./assets/mp4/background_video.mp4" type="video/mp4">
-  </video>
- 
-    <header>  
+    <header>
       <div>
-        <img class="logo_img"src="./assets/img/myPokedex.png"alt="myLogo"/>
+        <img class="logo_img" src="./assets/img/myPokedex.png" alt="myLogo" />
       </div>
-   <div class="serchbar">
-      <input type="text" id="search" maxlength="" placeholder="Pokemon suchen..." />
-      <button id="searchButton" onclick="searchPokemon()">Suchen</button>
+      <div class="search-container">
+        <div class="searchbar">
+          <input
+            type="text"
+            id="search"
+            placeholder="Pokémon suchen..."
+            aria-label="Pokémon suchen"
+          />
+          <button
+            id="searchButton"
+            onclick="searchPokemon()"
+            aria-label="Suche starten"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="myDiv">
+      <div id="condent-cards"></div>
+
+      <div id="load-more">
+        <button
+          id="load-button"
+          class="button"
+          style="vertical-align: middle"
+          onclick="loadMorePokemon()"
+        >
+          <span>Weitere Pokémon laden</span>
+        </button>
+        <span id="pokemon-count">von 1309 Pokémon geladen.</span>
+      </div>
+    </main>
+
+    <div id="loader" style="display: none"></div>
+
+    <div onclick="toggleOverlay()" id="overlay" class="overlay d_none">
+      <div onclick="bubblingProtextin(event)" class="overlay-content">
+        <div id="overlayBigCards"></div>
+      </div>
     </div>
-      </header>
-
-<main id="myDiv">  
-  <div id="condent-cards"></div>
-
-<div id="load-more">
-  <button id="load-button" class="button"style="vertical-align:middle" 
-  onclick="loadMorePokemon()">
-  <span>Weitere Pokémon laden</span>
-</button>
-  <span id="pokemon-count">von 1309 Pokémon geladen.</span>
-</div>
-</main>
-
-<div id="loader" style="display: none;">
-</div>
-
-  <div onclick="toggleOverlay()" id="overlay" class="overlay d_none">
-    <div onclick="bubblingProtextin(event)"class="overlay-content">
-      <div id="overlayBigCards">
-      </div> 
-    </div>
-</div>
 
     <footer>
-        <img
-          class="footer_img"
-          src="./assets/icons/pokeboll_logo.png"
-          alt="Pokeball-logo"
-        />
-        <p>© Dzmitry Stashkevich</p>
+      <img
+        class="footer_img"
+        src="./assets/icons/pokeboll_logo.png"
+        alt="Pokeball-logo"
+      />
+      <p>© Dzmitry Stashkevich</p>
     </footer>
-    
-</body>
-<script src="./script_main.js"></script>
-    <script src="./script/tamplates.js"></script> 
-    <script src="./script_overlay.js"></script>
+  </body>
+  <script src="./script_main.js"></script>
+  <script src="./script/tamplates.js"></script>
+  <script src="./script_overlay.js"></script>
 </html>
