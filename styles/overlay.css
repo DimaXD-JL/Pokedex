@@ -12,7 +12,6 @@
   right: 0;
   justify-content: center;
   align-items: center;
-
 }
 .overlay img {
   height: 100px;
@@ -41,20 +40,16 @@
 }
 .nav-button {
   display: flex;
-    gap: 100px;
-    margin-top: 16px;
+  gap: 100px;
+  margin-top: 16px;
 }
-.header-overlaybigcards{
+.header-overlaybigcards {
   font-size: 13px;
   font-style: bold;
   display: flex;
-  /* padding: 5px; */
   justify-content: space-around;
 }
-.overlaybigcard-img{
+.overlaybigcard-img {
   height: 50%;
   width: 90%;
-  /* border-style: groove; */
-  /* background-color: #00ff08; */
 }
-
