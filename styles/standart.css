@@ -205,6 +205,7 @@ button {
   outline: none;
   font-size: 1rem;
   background: transparent;
+  width: 130px;
 }
 
 #search::placeholder {
