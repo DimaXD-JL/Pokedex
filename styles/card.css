@@ -12,9 +12,7 @@
 }
 .poke-cards:hover {
   cursor: pointer;
-  transform: scale(1);
-  height: 250px;
-  width: 180px;
+  transform: scale(1.15);
   box-shadow: -3px 2px 20px 20px rgb(93, 137, 218);
 }
 .card-img {
