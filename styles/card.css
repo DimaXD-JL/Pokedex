@@ -1,63 +1,59 @@
-.poke-cards{
-    background-color: rgb(10, 34, 44, 0.53);
-    height: 200px;
-    width: 150px;
-    color: white;
-    border-radius: 5%;
-    border-color: #00ff08;
-    border: 0.39rem solid;
-    align-items: center;
-    box-shadow: inset -3px 2px 20px 11px rgb(0 0 4);
-    font-size: 40px;
-    
+.poke-cards {
+  background-color: rgb(10, 34, 44, 0.53);
+  height: 200px;
+  width: 150px;
+  color: white;
+  border-radius: 5%;
+  border-color: #00ff08;
+  border: 0.39rem solid;
+  align-items: center;
+  box-shadow: inset -3px 2px 20px 11px rgb(0 0 4);
+  font-size: 40px;
 }
-.poke-cards:hover{
-    cursor: pointer;
-    transform: scale(1.0);
-    height: 250px;
-    width: 180px;
-    box-shadow: -3px 2px 20px 20px rgb(93, 137, 218)
+.poke-cards:hover {
+  cursor: pointer;
+  transform: scale(1);
+  height: 250px;
+  width: 180px;
+  box-shadow: -3px 2px 20px 20px rgb(93, 137, 218);
 }
 .card-img {
-    height: 50%;
-    width: 90%;
-  }
-  .card-img:hover {
-    object-position: top;
-    cursor: pointer;
-    transform: scale(1.48);
-  }
-.card-icons{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    gap: 33px;
-    padding-top: 15px;
+  height: 50%;
+  width: 90%;
 }
-.type-icon {
-  width: 28px; 
-  height: 28px; 
-}
-.type-icon:hover {
-  width: 40px; 
-  height: 40px; 
-  /* padding-top: 5px; */
+.card-img:hover {
+  object-position: top;
   cursor: pointer;
   transform: scale(1.48);
 }
-#condent-cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 60px 20px;
-    flex-wrap: wrap;
-  }
-  .header-cards{
-    font-size: 13px;
-    font-style: bold;
-    display: flex;
-    /* padding: 5px; */
-    justify-content: space-around;
-  }
-  
+.card-icons {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 33px;
+  padding-top: 15px;
+}
+.type-icon {
+  width: 28px;
+  height: 28px;
+}
+.type-icon:hover {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transform: scale(1.48);
+}
+#condent-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 75px 20px;
+  flex-wrap: wrap;
+}
+.header-cards {
+  font-size: 13px;
+  font-style: bold;
+  display: flex;
+  justify-content: space-around;
+}
